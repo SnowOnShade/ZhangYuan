@@ -1,19 +1,44 @@
 
 <html>
 <head>
-    <title>Row Data</title>
+    <title>张园城市更新工程桩基信息</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        table { width: 100%; border-collapse: collapse; }
-        td, th { border: 1px solid #ddd; padding: 8px; }
-        tr:nth-child(even) { background-color: #f2f2f2; }
-        @media screen and (max-width: 600px) {
-            body { font-size: 16px; }
-            td, th { padding: 12px; }
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            font-family: Arial, sans-serif; 
+        }
+        .background {
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background-image: url('../picture/ToJaneLogo.png'); /* 水印图片路径 */
+            background-repeat: repeat; /* 重复背景 */
+            opacity: 0.04; /* 设置透明度 */
+            transform: rotate(-45deg); /* 旋转45度 */
+            z-index: -1; /* 确保背景在内容之下 */
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            font-size: 32px; 
+        }
+        td, th { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+        }
+        tr:nth-child(even) { 
+            background-color: #f2f2f2;
+            opacity: 0.6; /* 设置透明度 */
         }
     </style>
 </head>
 <body>
+    <div class="background"></div> <!-- 背景div -->
+    <p><span style="font-size: 40px;">  张园城市更新工程桩基数据  </span></p>
     <table>
         <tr><td>编号</td><td>00015GIGKD</td></tr>
         <tr><td>序号</td><td>15</td></tr>
